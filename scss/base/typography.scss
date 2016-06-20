@@ -1,0 +1,32 @@
+// headings
+
+.hd-xl, h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem + 0.5rem;  // 3rem
+}
+
+.hd-l, h2 {
+  font-size: 2.25rem;
+}
+
+hd-m, h3 {
+  font-size: 2rem;
+}
+
+.hd-s, h4 {
+  font-size: 1.75rem;
+}
+
+hd-xs, h5 {
+  font-size: 1.5rem;
+}
+
+.hd-xxs, h6 {
+  font-size: 1.25rem;
+}
+
+// uppercase
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
