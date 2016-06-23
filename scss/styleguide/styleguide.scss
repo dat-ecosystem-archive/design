@@ -56,16 +56,17 @@
 }
 
 .sg-label {
-  width: 20%;
-  float: left;
   font-size: .875rem;
   color: $color-neutral--60;
+  margin-bottom: 1rem;
   @include uppercase;
+  @media (min-width: 640px) {
+    width: 20%;
+    float: left;
+  }
 }
 
 .sg-subsection {
-  width: 80%;
-  float: left;
   img {
     max-width: 120px;
     height: auto;
@@ -73,17 +74,25 @@
     margin-right: 2rem;
     margin-bottom: 1rem;
   }
+  @media (min-width: 640px) {
+    width: 80%;
+    float: left;
+  }
 }
 
 .color-blocks {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
 }
 
 @mixin color-block($color) {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: $color;
   color: $color-white;
   text-align: center;

@@ -412,22 +412,32 @@ body {
 
 .hd-xl, h1 {
   font-size: 2.5rem;
-  line-height: 3rem; }
+  line-height: 3rem;
+  margin-bottom: 1rem; }
 
 .hd-l, h2 {
-  font-size: 2.25rem; }
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  margin-bottom: 1rem; }
 
 .hd-m, h3 {
-  font-size: 2rem; }
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-bottom: 1rem; }
 
 .hd-s, h4 {
-  font-size: 1.75rem; }
+  font-size: 1.5rem;
+  line-height: 2rem; }
 
 .hd-xs, h5 {
-  font-size: 1.5rem; }
+  font-size: 1.25rem;
+  line-height: 1.75rem; }
 
 .hd-xxs, h6 {
-  font-size: 1.25rem; }
+  font-size: .875rem;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: .025em; }
 
 a {
   color: #35B44F; }
@@ -530,18 +540,23 @@ a[disabled],
 
 .progress {
   width: 100%;
-  height: 5px;
+  height: 0.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #D3D7DB; }
+  background-color: #D3D7DB;
+  border-radius: 2px; }
 
 .progress__bar {
   width: 0%;
-  height: 5px;
-  background-color: #2980B9; }
+  height: 0.5rem;
+  background-color: #2980B9;
+  border-radius: 2px; }
 
 .progress__bar--complete {
   background-color: #35B44F; }
+
+.progress__bar--paused {
+  background-color: #7C8792; }
 
 /* styleguide layout */
 .sg-body {
@@ -589,31 +604,40 @@ a[disabled],
     margin-bottom: 0; }
 
 .sg-label {
-  width: 20%;
-  float: left;
   font-size: .875rem;
   color: #7C8792;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: .025em; }
+  @media (min-width: 640px) {
+    .sg-label {
+      width: 20%;
+      float: left; } }
 
-.sg-subsection {
-  width: 80%;
-  float: left; }
-  .sg-subsection img {
-    max-width: 120px;
-    height: auto;
-    float: left;
-    margin-right: 2rem;
-    margin-bottom: 1rem; }
+.sg-subsection img {
+  max-width: 120px;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem; }
+
+@media (min-width: 640px) {
+  .sg-subsection {
+    width: 80%;
+    float: left; } }
 
 .color-blocks {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 1rem; }
+  flex-direction: column; }
+  @media (min-width: 800px) {
+    .color-blocks {
+      flex-direction: row; } }
 
 .color-block--neutral {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #293648;
   color: #FFFFFF;
   text-align: center;
@@ -631,7 +655,8 @@ a[disabled],
 
 .color-block--neutral--90 {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #394B5B;
   color: #FFFFFF;
   text-align: center;
@@ -649,7 +674,8 @@ a[disabled],
 
 .color-block--neutral--70 {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #65737F;
   color: #FFFFFF;
   text-align: center;
@@ -667,7 +693,8 @@ a[disabled],
 
 .color-block--neutral--50 {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #919BA4;
   color: #FFFFFF;
   text-align: center;
@@ -685,7 +712,8 @@ a[disabled],
 
 .color-block--neutral--30 {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #C3C9CD;
   color: #FFFFFF;
   text-align: center;
@@ -703,7 +731,8 @@ a[disabled],
 
 .color-block--neutral--10 {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #E9EBEC;
   color: #FFFFFF;
   text-align: center;
@@ -721,7 +750,8 @@ a[disabled],
 
 .color-block--neutral--50 {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #919BA4;
   color: #FFFFFF;
   text-align: center;
@@ -739,7 +769,8 @@ a[disabled],
 
 .color-block--green {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #35B44F;
   color: #FFFFFF;
   text-align: center;
@@ -757,7 +788,8 @@ a[disabled],
 
 .color-block--info {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #2980B9;
   color: #FFFFFF;
   text-align: center;
@@ -775,7 +807,8 @@ a[disabled],
 
 .color-block--danger {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #D8524E;
   color: #FFFFFF;
   text-align: center;
@@ -793,7 +826,8 @@ a[disabled],
 
 .color-block--warning {
   flex: 0 1 0;
-  margin-right: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   background-color: #F0C30E;
   color: #FFFFFF;
   text-align: center;

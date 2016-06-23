@@ -1,20 +1,27 @@
 // progress bar
 
-$progress-height: 5px;
+$progress-height: .5rem;
+
 .progress {
   width: 100%;
   height: $progress-height;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: $color-neutral--20;
+  border-radius: 2px;
 }
 
 .progress__bar {
   width: 0%;
   height: $progress-height;
   background-color: $color-info;
+  border-radius: 2px;
 }
 
 .progress__bar--complete {
   background-color: $color-green;
+}
+
+.progress__bar--paused {
+  background-color: $color-neutral--60;
 }

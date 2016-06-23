@@ -1,3 +1,13 @@
+// mixins
+
+// uppercase
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+
+// global text styles
+
 body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
   line-height: 1.5;
@@ -8,30 +18,33 @@ body {
 .hd-xl, h1 {
   font-size: 2.5rem;
   line-height: 2.5rem + 0.5rem;  // 3rem
+  margin-bottom: 1rem;
 }
 
 .hd-l, h2 {
   font-size: 2.25rem;
+  line-height: 2.25rem + 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hd-m, h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 1.75rem + 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hd-s, h4 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem + 0.5rem;
 }
 
 .hd-xs, h5 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem + 0.5rem;
 }
 
 .hd-xxs, h6 {
-  font-size: 1.25rem;
-}
-
-// uppercase
-@mixin uppercase {
-  text-transform: uppercase;
-  letter-spacing: .025em;
+  font-size: .875rem;
+  line-height: .875rem + 0.5rem;
+  @include uppercase;
 }
