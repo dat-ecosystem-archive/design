@@ -1,4 +1,8 @@
 /* styleguide layout */
+.sg-body {
+  min-width: 900px;
+}
+
 .sg-header {
   background-color: $color-neutral--04;
   border-bottom: 1px solid $color-neutral--10;

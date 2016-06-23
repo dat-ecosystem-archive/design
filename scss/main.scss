@@ -3,15 +3,14 @@
 @import "variables/colors";
 @import "variables/transitions";
 @import "base/typography";
+@import "base/links";
 @import "base/buttons";
-@import "imports/styleguide";
+@import "base/progress";
+@import "styleguide/styleguide";
 
 body {
-  min-width: 990px;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
   color: $color-neutral;
 }
-
 
 // transitions on interactive elements
 a,
@@ -22,69 +21,4 @@ textarea {
   transition-property: background-color, color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
-}
-
-
-// links
-a {
-  color: $color-green;
-}
-
-a:hover,
-a:focus {
-  color: $color-green--hover;
-}
-
-.link--info {
-  color: $color-info;
-  &:hover,
-  &:focus{
-    color: $color-info--hover;
-  }
-}
-
-.link--warning {
-  color: $color-warning;
-  &:hover,
-  &:focus{
-    color: $color-warning--hover;
-  }
-}
-
-.link--danger {
-  color: $color-danger;
-  &:hover,
-  &:focus{
-    color: $color-danger--hover;
-  }
-}
-
-a[disabled],
-.link--disabled {
-  color: $color-neutral--40;
-  &:hover,
-  &:focus{
-    color: $color-neutral--40;
-  }
-}
-
-
-// progress bar
-$progress-height: 5px;
-.progress {
-  width: 100%;
-  height: $progress-height;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: $color-neutral--20;
-}
-
-.progress__bar {
-  width: 0%;
-  height: $progress-height;
-  background-color: $color-info;
-}
-
-.progress__bar--complete {
-  background-color: $color-green;
 }
