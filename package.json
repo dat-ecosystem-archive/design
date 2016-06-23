@@ -1,24 +1,31 @@
 {
-  "name": "design",
-  "version": "1.0.0",
-  "description": "design docs and assets for dat project",
+  "name": "dat-design",
+  "version": "1.1.0",
+  "description": "design assets and docs for dat project",
+  "homepage": "http://datproject.github.io/design/",
+  "author": "dat project",
+  "license": "ISC",
   "main": "index.js",
+  "style": "public/css/base.css",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css && node-sass --include-path scss scss/styleguide.scss  public/css/styleguide.css",
+    "build-css": "node-sass --include-path scss scss/base.scss   public/css/base.css && node-sass --include-path scss scss/styleguide.scss  public/css/styleguide.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/datproject/design.git"
   },
-  "author": "dat project",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/datproject/design/issues"
   },
-  "homepage": "https://github.com/datproject/design#readme",
   "devDependencies": {
     "node-sass": "^3.7.0",
     "nodemon": "^1.9.2"
-  }
+  },
+  "keywords": [
+    "css-module",
+    "css",
+    "dat",
+    "datproject"
+  ]
 }
