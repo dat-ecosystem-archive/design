@@ -4,7 +4,7 @@
   "description": "design docs and assets for dat project",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css && node-sass --include-path scss scss/styleguide.scss  public/css/styleguide.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
