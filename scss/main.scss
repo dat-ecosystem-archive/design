@@ -1,28 +1,17 @@
+@import "normalize/default";
+@import "normalize/custom";
 @import "variables/colors";
 @import "variables/transitions";
-@import "reset/box-model";
 @import "base/typography";
 @import "base/buttons";
 @import "imports/styleguide";
 
 body {
   min-width: 990px;
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  line-height: 1.5;
   font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
   color: $color-neutral;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
-
-p, ul, ol, dl {
-  margin-bottom: 1rem;
-}
 
 // transitions on interactive elements
 a,
@@ -36,18 +25,14 @@ textarea {
 }
 
 
-
 // links
 a {
   color: $color-green;
-  text-decoration: none;
 }
 
 a:hover,
-a:focus{
+a:focus {
   color: $color-green--hover;
-  outline: none;
-  text-decoration: none;
 }
 
 .link--info {
