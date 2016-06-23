@@ -558,6 +558,18 @@ a[disabled],
 .progress__bar--paused {
   background-color: #7C8792; }
 
+body {
+  color: #293648; }
+
+a,
+button,
+input,
+select,
+textarea {
+  transition-property: background-color, color;
+  transition-duration: 0.015s;
+  transition-timing-function: ease-out; }
+
 /* styleguide layout */
 .sg-body {
   min-width: 900px; }
@@ -857,15 +869,3 @@ a[disabled],
   background-color: #F6F7F8;
   padding: 1rem;
   overflow-x: auto; }
-
-body {
-  color: #293648; }
-
-a,
-button,
-input,
-select,
-textarea {
-  transition-property: background-color, color;
-  transition-duration: 0.015s;
-  transition-timing-function: ease-out; }
