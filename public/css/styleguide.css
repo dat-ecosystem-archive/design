@@ -558,6 +558,25 @@ a[disabled],
 .progress__bar--paused {
   background-color: #7C8792; }
 
+/* Breakpoint definitions: */
+/**
+ * Responsive Mixins ----------------------------
+ * https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
+ *
+ * Sample mixin usage in your .scss files
+ * (assumes you've @import'ed this file):
+ * .foo {
+ *   background-color: red;
+ *
+ *   @include breakpoint (xs) { // up to max width 320px
+ *     background-color: green;
+ *   }
+ *   @include breakpoint (vxs) { // up to max height 320px
+ *     background-color: blue;
+ *   }
+ * }
+ *
+ */
 body {
   color: #293648; }
 
