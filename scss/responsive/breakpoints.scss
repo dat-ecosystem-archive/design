@@ -1,0 +1,68 @@
+/* Breakpoint definitions: */
+$xs:    320px;
+$sm:    480px;
+$md1:   640px;
+$md2:   768px;
+$lg:    1024px;
+$xl:    1280px;
+
+/**
+ * Responsive Mixins ----------------------------
+ * https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
+ *
+ * Sample mixin usage in your .scss files
+ * (assumes you've @import'ed this file):
+ * .foo {
+ *   background-color: red;
+ *
+ *   @include breakpoint (xs) { // up to max width 320px
+ *     background-color: green;
+ *   }
+ *   @include breakpoint (vxs) { // up to max height 320px
+ *     background-color: blue;
+ *   }
+ * }
+ *
+ */
+@mixin breakpoint ($class) {
+
+  @if $class == xs {
+    @media (max-width: $xs) { @content; }
+  }
+  @else if $class == vxs {
+    @media (max-height: $xs) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (max-width: $sm) { @content; }
+  }
+  @else if $class == vsm {
+    @media (max-height: $sm) { @content; }
+  }
+
+  @else if $class == md1 {
+    @media (max-width: $md1) { @content; }
+  }
+  @else if $class == vmd1 {
+    @media (max-height: $md1) { @content; }
+  }
+
+  @else if $class == md2 {
+    @media (max-width: $md2) { @content; }
+  }
+  @else if $class == vmd2 {
+    @media (max-height: $md2) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (max-width: $lg) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (max-width: $xl) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin not supported: " + $class;
+  }
+}
