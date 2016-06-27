@@ -611,14 +611,17 @@ a[disabled],
  *
  * Sample mixin usage in your .scss files
  * (assumes you've @import'ed this file):
+ *
  * .foo {
  *   background-color: red;
- *
- *   @include breakpoint (xs) { // up to max width 320px
- *     background-color: green;
+ *   @include breakpoint (max-md1) { // up until a width of 640px
+ *    background-color: beige;
  *   }
- *   @include breakpoint (vxs) { // up to max height 320px
- *     background-color: blue;
+ *   @include breakpoint (md2) { // starting from a width 768px
+ *    background-color: green;
+ *   }
+ *   @include breakpoint (vmd2) { // starting from a height of 768px
+ *    background-color: blue;
  *   }
  * }
  *
