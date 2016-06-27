@@ -2,10 +2,6 @@
 
 
 /* styleguide layout */
-.sg-body {
-  min-width: 900px;
-}
-
 .sg-header {
   background-color: $color-neutral--04;
   border-bottom: 1px solid $color-neutral--10;
@@ -53,9 +49,6 @@
   padding: 1.5rem 1rem;
   border: 1px solid $color-neutral--30;
   border-radius: 4px;
-  p:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .sg-label {

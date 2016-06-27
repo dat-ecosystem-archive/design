@@ -48,3 +48,26 @@ body {
   line-height: .875rem + 0.5rem;
   @include uppercase;
 }
+
+// paragraphs
+
+.lead {
+  font-size: 1.5rem;
+  line-height: 1.333;
+  margin-bottom: 1.5rem;
+}
+
+// blockquote
+
+.blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 4px solid $color-neutral--20;
+  blockquote {
+    margin: 0;
+  }
+  figcaption {
+    font-size: .875rem;
+    color: $color-neutral--60;
+  }
+}

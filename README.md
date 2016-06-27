@@ -10,8 +10,8 @@ npm run watch-css
 open index.html
 ```
 
-## api for importing (s)css assets into other projects
-from your project's root directory (assuming you're using [npm](http://npmjs.com)):
+## <a name="dat-design-api"></a>api for importing (s)css assets into other projects
+from your project’s root directory (assuming you’re using [npm](http://npmjs.com)):
 ```
 npm install dat-design --save
 ```
@@ -23,7 +23,7 @@ the simplest way to include this module in another project. just include the sty
 <link type="text/css" rel="stylesheet" href="./../node_modules/dat-design/css/base.css">
 ```
 #### vanilla @import:
-from within a css file in your project, include a relative path to the file you want to include from this repo, which is now in your project's `nodule_modules` directory. not recommended for use in production web apps without a build step that removes the @import, since @import is not performant on the fly.
+from within a css file in your project, include a relative path to the file you want to include from this repo, which is now in your project’s `nodule_modules` directory. not recommended for use in production web apps without a build step that removes the @import, since @import is not performant on the fly.
 ```
 @import './../node_modules/dat-design/public/css/base.css';
 ```
@@ -31,4 +31,3 @@ from within a css file in your project, include a relative path to the file you 
 ## see something missing?
 
 If some dat project is in need of a new design element or concept please open an issue!
-

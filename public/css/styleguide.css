@@ -439,6 +439,21 @@ body {
   text-transform: uppercase;
   letter-spacing: .025em; }
 
+.lead {
+  font-size: 1.5rem;
+  line-height: 1.333;
+  margin-bottom: 1.5rem; }
+
+.blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 4px solid #D3D7DB; }
+  .blockquote blockquote {
+    margin: 0; }
+  .blockquote figcaption {
+    font-size: .875rem;
+    color: #7C8792; }
+
 a {
   color: #35B44F; }
 
@@ -586,13 +601,10 @@ input,
 select,
 textarea {
   transition-property: background-color, color;
-  transition-duration: 0.015s;
+  transition-duration: 0.05s;
   transition-timing-function: ease-out; }
 
 /* styleguide layout */
-.sg-body {
-  min-width: 900px; }
-
 .sg-header {
   background-color: #F6F7F8;
   border-bottom: 1px solid #E9EBEC;
@@ -631,8 +643,6 @@ textarea {
   padding: 1.5rem 1rem;
   border: 1px solid #C3C9CD;
   border-radius: 4px; }
-  .sg-example p:last-child {
-    margin-bottom: 0; }
 
 .sg-label {
   font-size: .875rem;
