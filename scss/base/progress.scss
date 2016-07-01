@@ -2,25 +2,31 @@
 
 $progress-height: .5rem;
 $bar-height: $progress-height;
+$counter-width: 3rem;
 
 .progress {
-  height: $progress-height;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: $color-neutral--20;
-  border-radius: 2px;
   overflow: hidden;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 .progress__bar {
+  height: $progress-height;
+  width: calc(100% - #{$counter-width});
   float: left;
+  overflow: hidden;
+  background-color: $color-neutral--20;
+  border-radius: 2px;
+}
+
+.progress__line {
   width: 0%;
   height: $progress-height;
   background-color: $color-info;
   border-radius: 2px;
 }
 
-.progress__bar--loading {
+.progress__line--loading {
   $tile-width: 28px;
   $stripe-width: 5px;
   @keyframes move-bg {
@@ -53,19 +59,18 @@ $bar-height: $progress-height;
   }
 }
 
-.progress__bar--complete {
+.progress__line--complete {
   background-color: $color-green;
 }
 
-.progress__bar--paused {
+.progress__line--paused {
   background-color: $color-neutral--60;
 }
 
 .progress__counter {
   float: right;
-  min-width: 2rem;
+  min-width: $counter-width;
   margin-top: -.4rem;
-  margin-left: 1rem;
   text-align: right;
   font-size: .875rem;
   color: $color-neutral--60;

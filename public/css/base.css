@@ -554,21 +554,25 @@ a[disabled],
   padding: .75rem 1.5rem; }
 
 .progress {
-  height: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #D3D7DB;
-  border-radius: 2px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: .5rem;
+  padding-bottom: .5rem; }
 
 .progress__bar {
+  height: 0.5rem;
+  width: calc(100% - 3rem);
   float: left;
+  overflow: hidden;
+  background-color: #D3D7DB;
+  border-radius: 2px; }
+
+.progress__line {
   width: 0%;
   height: 0.5rem;
   background-color: #2980B9;
   border-radius: 2px; }
 
-.progress__bar--loading {
+.progress__line--loading {
   overflow: hidden;
   position: relative;
   height: 0.5rem; }
@@ -578,7 +582,7 @@ a[disabled],
     background-position: 28px 0; }
   100% {
     background-position: 0 0; } }
-  .progress__bar--loading:before {
+  .progress__line--loading:before {
     content: '';
     width: 100%;
     height: 0.5rem;
@@ -589,17 +593,16 @@ a[disabled],
     background-size: 28px 0.5rem;
     animation: move-bg .75s linear infinite; }
 
-.progress__bar--complete {
+.progress__line--complete {
   background-color: #35B44F; }
 
-.progress__bar--paused {
+.progress__line--paused {
   background-color: #7C8792; }
 
 .progress__counter {
   float: right;
-  min-width: 2rem;
+  min-width: 3rem;
   margin-top: -.4rem;
-  margin-left: 1rem;
   text-align: right;
   font-size: .875rem;
   color: #7C8792; }
