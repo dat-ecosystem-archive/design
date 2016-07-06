@@ -44,7 +44,7 @@ if there's no file path specified after the `dat-design` module name (like above
 ```
 @import "~dat-design/responsive/breakpoints.scss"
 ```
-node-sass-magic-importer offers lots of other options in addition to these as well. do note that this module is still under active development.
+node-sass-magic-importer offers lots of other options in addition to these as well. do note that the magic importer is still under active development.
 
 ## is something missing?
 
