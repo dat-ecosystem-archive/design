@@ -27,7 +27,25 @@ from within a css file in your project, include a relative path to the file you 
 ```
 @import './../node_modules/dat-design/public/css/base.css';
 ```
+#### node-sass-magic-importer:
+use the [https://www.npmjs.com/package/node-sass-magic-importer](magic importer npm module) with node-sass.
+```
+npm install node-sass-magic-importer --save-dev
+```
+when you set up node-sass to run in your package.json scripts, you can use the `--importer` option like so:
+```
+"build-css": "node-sass --importer node_modules/node-sass-magic-importer src/scss/sample.scss public/css/sample.css"
+```
+now, from within your `sample.scss` file, you can `@import` this `dat-design` npm module with the following syntax:
+```
+@import "~dat-design";
+```
+if there's no file path specified after the `dat-design` module name (like above), the `@import` rule resolves to the file defined by this module's `style` property in the package.json. you can also point at individual files within this module from within the scss files in your project to use mixins and variables:
+```
+@import "~dat-design/responsive/breakpoints.scss"
+```
+node-sass-magic-importer offers lots of other options in addition to these as well. do note that this module is still under active development.
 
-## see something missing?
+## is something missing?
 
 If some dat project is in need of a new design element or concept please open an issue!
