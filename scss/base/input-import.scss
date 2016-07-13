@@ -1,0 +1,40 @@
+// example:
+// <div class="dat-import">
+//   <div class="dat-import--icon">
+//     <img src="./public/img/link.svg" />
+//   </div>
+//   <input type="text" readonly="true" value="" id="share-link" data-intro="" class="dat-import--input">
+// </div>
+
+// dat-import
+.dat-import {
+  position: relative;
+  overflow: hidden;
+}
+
+// we need an extra element + wrapper div for the icon, as we can't have pseude-elements on input elements
+.dat-import--icon {
+  $icon-height: .625rem;
+  position: absolute;
+  top: calc(1.5rem - (#{$icon-height} / 2));
+  left: 1rem;
+  pointer-events: none;
+  img {
+    display: block;
+    width: 1.25rem;
+    height: $icon-height;
+  }
+}
+
+.dat-import--input {
+  height: 3rem;
+  padding-right: 1rem;
+  padding-left: 3rem;
+  border-radius: 2px;
+  border: 1px solid $color-green--hover;
+  color: $color-neutral--60;
+  &:hover, &:focus, &:active {
+    outline: none;
+    color: $color-neutral;
+  }
+}
