@@ -23,3 +23,11 @@ textarea {
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
 }
+
+ul, ol {
+  .plain {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}

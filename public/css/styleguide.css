@@ -667,6 +667,11 @@ textarea {
   transition-duration: 0.05s;
   transition-timing-function: ease-out; }
 
+ul .plain, ol .plain {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
 /* styleguide layout */
 .sg-header {
   background-color: #F6F7F8;
