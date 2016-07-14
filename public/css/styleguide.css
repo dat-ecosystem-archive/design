@@ -633,6 +633,11 @@ a[disabled],
     outline: none;
     color: #293648; }
 
+ul.list-plain, ol.list-plain {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
 /* Breakpoint definitions: */
 /**
  * Responsive Mixins ----------------------------
@@ -666,11 +671,6 @@ textarea {
   transition-property: background-color, color;
   transition-duration: 0.05s;
   transition-timing-function: ease-out; }
-
-ul.plain, ol.plain {
-  padding: 0;
-  margin: 0;
-  list-style-type: none; }
 
 /* styleguide layout */
 .sg-header {

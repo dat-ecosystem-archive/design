@@ -7,6 +7,7 @@
 @import "base/buttons";
 @import "base/progress";
 @import "base/input-import";
+@import "base/lists";
 @import "responsive/breakpoints";
 
 body {
@@ -24,10 +25,3 @@ textarea {
   transition-timing-function: $transition-timing-function;
 }
 
-ul, ol {
-  &.plain {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-}
