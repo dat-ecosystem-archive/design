@@ -628,7 +628,8 @@ a[disabled],
   padding-left: 3rem;
   border-radius: 2px;
   border: 1px solid #24943A;
-  color: #7C8792; }
+  color: #7C8792;
+  text-transform: uppercase; }
   .dat-import--input:hover, .dat-import--input:focus, .dat-import--input:active {
     outline: none;
     color: #293648; }
