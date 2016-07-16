@@ -33,6 +33,7 @@
   border-radius: 2px;
   border: 1px solid $color-green--hover;
   color: $color-neutral--60;
+  text-transform: uppercase;
   &:hover, &:focus, &:active {
     outline: none;
     color: $color-neutral;
