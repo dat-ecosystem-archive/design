@@ -9,7 +9,7 @@
 @import "base/input-import";
 @import "base/lists";
 @import "responsive/breakpoints";
-@import "./../node_modules/basscss-sass/scss/basscss";
+@import "~basscss/css/basscss.css";
 
 body {
   color: $color-neutral;
