@@ -61,6 +61,25 @@ if there's no file path specified after the `dat-design` module name (like above
 
 node-sass-magic-importer offers lots of other options in addition to these as well. do note that the magic importer is still under active development.
 
-## is something missing?
+### How to use the dat (S)CSS in your project
+
+#### Reset
+
+Dat-design imports a CSS reset ([https://necolas.github.io/normalize.css/](normalize)).
+
+#### Variables
+
+Dat-design comes with [https://github.com/datproject/design/tree/master/scss/variables](variables) for colors and transitions that you should use in your project to ensure visual consistency between dat-related projects.
+
+#### CSS classes
+
+Dat-design includes a toolkit of utility classes ([https://github.com/basscss/basscss-sass](basscss-sass)). Refer to the [http://www.basscss.com/](basscss) on how to use them.
+There's also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [http://datproject.github.io/design/](dat styleguide).
+
+#### Image Assets
+
+Dat-design comes with re-usable image assets, such as logos and icons.
+
+## Is something missing?
 
 If some dat project is in need of a new design element or concept please open an issue!

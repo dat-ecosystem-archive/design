@@ -9,6 +9,7 @@
 @import "base/input-import";
 @import "base/lists";
 @import "responsive/breakpoints";
+@import "./../node_modules/basscss-sass/scss/basscss";
 
 body {
   color: $color-neutral;
@@ -24,4 +25,3 @@ textarea {
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
 }
-
