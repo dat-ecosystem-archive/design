@@ -11,6 +11,12 @@ npm run watch-css
 open index.html
 ```
 
+to build svg sprite:
+
+```shell
+npm run build-icons
+```
+
 ## <a name="dat-design-api"></a>api for importing (s)css assets into other projects
 from your project’s root directory (assuming you’re using [npm](http://npmjs.com)):
 
@@ -75,6 +81,16 @@ Dat-design comes with [https://github.com/datproject/design/tree/master/scss/var
 
 Dat-design includes a toolkit of utility classes ([https://github.com/basscss/basscss](basscss)). Refer to the [http://www.basscss.com/](basscss documentation) on how to use them.
 There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [http://datproject.github.io/design/](dat styleguide).
+
+### SVG Icon sprite
+
+[work in progress] There’s a set of dat-specific icons that are stored in an optimized svg sprite. Include this sprite in your layout file, and the icons can be accessed like this:
+
+```html
+<svg class="daticon">
+  <use xlink:href="#daticon-name-of-icon"></use>
+</svg>
+```
 
 #### Image Assets
 

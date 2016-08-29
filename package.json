@@ -9,7 +9,9 @@
   "style": "public/css/base.css",
   "scripts": {
     "build-css": "node-sass --importer node_modules/node-sass-magic-importer --include-path scss scss/base.scss   public/css/base.css  && node-sass --importer node_modules/node-sass-magic-importer --include-path scss scss/styleguide.scss  public/css/styleguide.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-icons": "svgo -f icons && spritesh --input icons --output public/svg/sprite.svg --viewbox '0 0 240 240'"
+
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,9 @@
     "basscss": "^8.0.2",
     "node-sass": "^3.7.0",
     "node-sass-magic-importer": "^0.1.4",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "spritesh": "^1.2.0",
+    "svgo": "^0.7.0"
   },
   "keywords": [
     "css-module",
