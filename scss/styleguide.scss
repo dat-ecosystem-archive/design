@@ -1,6 +1,5 @@
 @import "base";
 
-
 /* styleguide layout */
 .sg-header {
   background-color: $color-neutral--04;
@@ -157,4 +156,11 @@
   background-color: $color-neutral--04;
   padding: 1rem;
   overflow-x: auto;
+}
+
+.daticon {
+  width: 96px;
+  height: 96px;
+  padding: 1rem;
+  fill: currentColor;
 }
