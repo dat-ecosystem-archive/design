@@ -84,19 +84,11 @@ There’s also a set of custom classes for dat-specific components, like buttons
 
 ## How to use Dat Icons
 
-The dat-design package comes with set of dat-specific icons. See it here: [link to sg]
+The dat-design package comes with set of dat-specific icons. All available icons are documented in the [http://datproject.github.io/design/](styleguide).
 
-### img
+### Inlining SVG
 
-You can display the individual SVG files in your templates as an image:
-
-```html
-<img src="./../node_modules/dat-design/icons/icon-name.svg" />
-```
-
-### inline
-
-By inlining the SVG code, you’ll be able to style the contents of the SVG. Just grab the code of an individual icon file and insert it in your template like:
+By inlining the SVG code, you’ll be able to style the contents of the SVG. Just copy the code of an individual icon file and insert it in your template like:
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><title>Title of this svg</title><path d="M76 120a12 12 0 0 0 12 12h64a12 12 0 0 0 0-24H88a12 12 0 0 0-12 12z"/><path d="M35 120a35 35 0 0 1 35-35h38V65H70a55 55 0 0 0 0 110h38v-20H70a35 35 0 0 1-35-35zm135-55h-38v20h38a35 35 0 1 1 0 70h-38v20h38a55 55 0 0 0 0-110z"/></svg>
