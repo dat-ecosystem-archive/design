@@ -11,7 +11,7 @@ npm run watch-css
 open index.html
 ```
 
-to build svg sprite:
+to build SVG sprite:
 
 ```shell
 npm run build-icons
@@ -82,19 +82,47 @@ Dat-design comes with [https://github.com/datproject/design/tree/master/scss/var
 Dat-design includes a toolkit of utility classes ([https://github.com/basscss/basscss](basscss)). Refer to the [http://www.basscss.com/](basscss documentation) on how to use them.
 There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [http://datproject.github.io/design/](dat styleguide).
 
-### SVG Icon sprite
+## How to use Dat Icons
 
-[work in progress] There’s a set of dat-specific icons that are stored in an optimized svg sprite. Include this sprite in your layout file, and the icons can be accessed like this:
+The dat-design package comes with set of dat-specific icons. See it here: [link to sg]
+
+### img
+
+You can display the individual SVG files in your templates as an image:
+
+```html
+<img src="./../node_modules/dat-design/icons/icon-name.svg" />
+```
+
+### inline
+
+By inlining the SVG code, you’ll be able to style the contents of the SVG. Just grab the code of an individual icon file and insert it in your template like:
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><title>Title of this svg</title><path d="M76 120a12 12 0 0 0 12 12h64a12 12 0 0 0 0-24H88a12 12 0 0 0-12 12z"/><path d="M35 120a35 35 0 0 1 35-35h38V65H70a55 55 0 0 0 0 110h38v-20H70a35 35 0 0 1-35-35zm135-55h-38v20h38a35 35 0 1 1 0 70h-38v20h38a55 55 0 0 0 0-110z"/></svg>
+```
+
+### SVG sprite + <use>
+A more performant and convenient way of inlining SVG icons is to do so via referencing them from an icon sprite. An optimized sprite is included in this package (``./../node_modules/dat-design/public/svg/sprite.svg`). Include this sprite in your layout file, and the individual icons can be referenced like this:
 
 ```html
 <svg class="daticon">
-  <use xlink:href="#daticon-name-of-icon"></use>
+  <use xlink:href="#daticon-edit-dat"></use>
 </svg>
 ```
 
-#### Image Assets
+### External Sprite (won’t work in lte IE 11)
+Instead of including the sprite in your layout file, you can link to it as an external resource. Note that this is only supported in the latest browsers, IE 11 not included.
 
-Dat-design comes with re-usable image assets, such as logos and svg icons.
+```html
+<svg class="daticon">
+  <use xlink:href="public/svg/sprite.svg#daticon-edit-dat"></use>
+</svg>
+```
+
+#### Logo Assets
+
+Dat-design comes with ready-to-use logo assets, such as logos and SVG icons in `./../node_modules/dat-design/public`.
 
 ## Is something missing?
 
