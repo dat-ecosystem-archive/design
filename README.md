@@ -67,24 +67,29 @@ if there's no file path specified after the `dat-design` module name (like above
 
 node-sass-magic-importer offers lots of other options in addition to these as well. do note that the magic importer is still under active development.
 
-### How to use dat (S)CSS in your project
+### How To Use Dat (S)CSS in Your Project
+
+By importing dat-design in your projects (s)css, you’ll get the following:
 
 #### Reset
 
-Dat-design imports a CSS reset ([https://necolas.github.io/normalize.css/](normalize)).
+Dat-design uses [https://necolas.github.io/normalize.css/](Normalize), which makes browsers render all elements more consistently.
 
 #### Variables
 
-Dat-design comes with [https://github.com/datproject/design/tree/master/scss/variables](variables) for colors and transitions that you should use in your project to ensure visual consistency between dat-related projects.
+The SCSS version of dat-design provides you with [https://github.com/datproject/design/tree/master/scss/variables](variables) for colors and transitions which you should use in your project to ensure visual consistency between dat-related projects. Refer to the [http://datproject.github.io/design/](styleguide) to understand how.
 
-#### CSS classes
+#### Utility classes
 
 Dat-design includes a toolkit of utility classes ([https://github.com/basscss/basscss](basscss)). Refer to the [http://www.basscss.com/](basscss documentation) on how to use them.
+
+#### Dat classes
+
 There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [http://datproject.github.io/design/](dat styleguide).
 
-## How to use Dat Icons
+## How To Use Dat Icons in Your Project
 
-The dat-design package comes with set of dat-specific icons. All available icons are documented in the [http://datproject.github.io/design/](styleguide).
+The dat-design package comes with a set of dat-specific icons. All available icons are documented in the [http://datproject.github.io/design/](styleguide).
 
 ### Inlining SVG
 
@@ -94,7 +99,7 @@ By inlining the SVG code, you’ll be able to style the contents of the SVG. Jus
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><title>Title of this svg</title><path d="M76 120a12 12 0 0 0 12 12h64a12 12 0 0 0 0-24H88a12 12 0 0 0-12 12z"/><path d="M35 120a35 35 0 0 1 35-35h38V65H70a55 55 0 0 0 0 110h38v-20H70a35 35 0 0 1-35-35zm135-55h-38v20h38a35 35 0 1 1 0 70h-38v20h38a55 55 0 0 0 0-110z"/></svg>
 ```
 
-### SVG sprite + <use>
+### SVG Sprite + `<use>`
 A more performant and convenient way of inlining SVG icons is to do so via referencing them from an icon sprite. An optimized sprite is included in this package (``./../node_modules/dat-design/public/svg/sprite.svg`). Include this sprite in your layout file, and the individual icons can be referenced like this:
 
 ```html
@@ -103,7 +108,7 @@ A more performant and convenient way of inlining SVG icons is to do so via refer
 </svg>
 ```
 
-### External Sprite (won’t work in lte IE 11)
+### External SVG Sprite (won’t work in lte IE 11)
 Instead of including the sprite in your layout file, you can link to it as an external resource. Note that this is only supported in the latest browsers, IE 11 not included.
 
 ```html
