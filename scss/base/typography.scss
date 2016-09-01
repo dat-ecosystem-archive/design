@@ -8,8 +8,11 @@
 
 // global text styles
 
-body {
+body, input, textarea, select, button {
   font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+}
+
+body {
   line-height: 1.5;
 }
 

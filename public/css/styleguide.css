@@ -430,8 +430,10 @@ a:focus {
   outline: none;
   text-decoration: none; }
 
+body, input, textarea, select, button {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif; }
+
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
   line-height: 1.5; }
 
 .hd-xl, h1 {
