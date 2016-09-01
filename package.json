@@ -27,6 +27,9 @@
     "spritesh": "^1.2.0",
     "svgo": "^0.7.0"
   },
+  "dependencies": {
+    "basscss": "^8.0.2"
+  },
   "keywords": [
     "css-module",
     "css",
