@@ -41,7 +41,7 @@ from within a css file in your project, include a relative path to the file you 
 ```
 
 #### node-sass-magic-importer:
-use the [https://www.npmjs.com/package/node-sass-magic-importer](magic importer npm module) with node-sass.
+Use the [magic importer npm module](https://www.npmjs.com/package/node-sass-magic-importer) with node-sass.
 
 ```shell
 npm install node-sass-magic-importer --save-dev
@@ -73,23 +73,23 @@ By importing dat-design in your projects (s)css, you’ll get the following:
 
 #### Reset
 
-Dat-design uses [https://necolas.github.io/normalize.css/](Normalize), which makes browsers render all elements more consistently.
+Dat-design uses [Normalize](https://necolas.github.io/normalize.css/), which makes browsers render all elements more consistently.
 
 #### Variables
 
-The SCSS version of dat-design provides you with [https://github.com/datproject/design/tree/master/scss/variables](variables) for colors and transitions which you should use in your project to ensure visual consistency between dat-related projects. Refer to the [http://datproject.github.io/design/](styleguide) to understand how.
+The SCSS version of dat-design provides you with [variables](https://github.com/datproject/design/tree/master/scss/variables) for colors and transitions which you should use in your project to ensure visual consistency between dat-related projects. Refer to the [Dat Styleguide](http://datproject.github.io/design/) to understand how.
 
 #### Utility classes
 
-Dat-design includes a toolkit of utility classes ([https://github.com/basscss/basscss](Basscss)). Refer to the [http://www.basscss.com/](Basscss Documentation) on how to use them.
+Dat-design includes a toolkit of utility classes ([Basscss](https://github.com/basscss/basscss)). Refer to the [Basscss Documentation](http://www.basscss.com/) on how to use them.
 
 #### Dat classes
 
-There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [http://datproject.github.io/design/](Dat Styleguide).
+There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [Dat Styleguide](http://datproject.github.io/design/).
 
-## How To Use Dat Icons in Your Project
+## How To Use Dat Icons in Your Project (work in progress)
 
-The dat-design package comes with a set of dat-specific icons. All available icons are documented in the [http://datproject.github.io/design/](styleguide).
+The dat-design package comes with a set of dat-specific icons. All available icons are documented in the [Dat Styleguide](http://datproject.github.io/design/).
 
 ### Inlining SVG
 
