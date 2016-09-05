@@ -20,14 +20,12 @@
     "url": "https://github.com/datproject/design/issues"
   },
   "devDependencies": {
-    "basscss": "^8.0.2",
     "node-sass": "^3.7.0",
     "node-sass-magic-importer": "^0.1.4",
     "nodemon": "^1.9.2",
     "spritesh": "^1.2.0",
     "svgo": "^0.7.0"
   },
-  "dependencies": {},
   "keywords": [
     "css-module",
     "css",
