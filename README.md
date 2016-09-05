@@ -81,11 +81,11 @@ The SCSS version of dat-design provides you with [https://github.com/datproject/
 
 #### Utility classes
 
-Dat-design includes a toolkit of utility classes ([https://github.com/basscss/basscss](basscss)). Refer to the [http://www.basscss.com/](basscss documentation) on how to use them.
+Dat-design includes a toolkit of utility classes ([https://github.com/basscss/basscss](Basscss)). Refer to the [http://www.basscss.com/](Basscss Documentation) on how to use them.
 
 #### Dat classes
 
-There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [http://datproject.github.io/design/](dat styleguide).
+There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [http://datproject.github.io/design/](Dat Styleguide).
 
 ## How To Use Dat Icons in Your Project
 
