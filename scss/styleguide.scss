@@ -63,17 +63,18 @@
 }
 
 .sg-subsection {
-  img {
-    max-width: 120px;
-    height: auto;
-    float: left;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-  }
   @media (min-width: 640px) {
     width: 80%;
     float: left;
   }
+}
+
+.sg-subsection__img {
+  max-width: 120px;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .color-blocks {
