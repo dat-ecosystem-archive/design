@@ -29,7 +29,7 @@
         <h3 class="hd-xxs sg-label">Dat Data Logo</h3>
         <div class="sg-subsection">
           <p>
-            <img src="downloads/dat-data-logo.svg" alt="Dat Data Logo" />
+            <img src="downloads/dat-data-logo.svg" alt="Dat Data Logo" class="sg-subsection__img" />
             This is the Dat logo. It consists of the hexagon in Dat green and the centered "dat DATA" set in Source Sans. Only use it when it can be displayed at least 60px tall, in order to keep the text legible.
           </p>
           <p>
@@ -39,7 +39,7 @@
         <h3 class="hd-xxs sg-label">Dat Hexagon</h3>
         <div class="sg-subsection">
           <p>
-            <img src="downloads/dat-hexagon.svg" alt="Dat Hexagon" />
+            <img src="downloads/dat-hexagon.svg" alt="Dat Hexagon" class="sg-subsection__img" />
             Use the green hexagon without text when the logo is displayed in small sizes, e.g. in small header bars or favicons.
           </p>
           </p>
@@ -405,7 +405,52 @@
         <h3 class="hd-xxs sg-label">Loader</h3>
         <div class="sg-subsection">
           <div class="sg-example">
+            <img src="loaders/hexagon-loader.svg" alt="Loading…">
+            <img src="loaders/hexagon-loader-green.svg" alt="Loading…">
+            <img src="loaders/hexagon-loader-small.svg" alt="Loading…">
+            <img src="loaders/hexagon-loader-small-green.svg" alt="Loading…">
 
+            <!--  In Firefox, only svg works, not img: -->
+            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+                <style type="text/css">
+                <![CDATA[
+                  #p1, #p2 {
+                    animation:
+                      size cubic-bezier(0.165, 0.84, 0.44, 1) 1.8s,
+                      opacity cubic-bezier(0.3, 0.61, 0.355, 1) 1.8s;
+                    animation-iteration-count: infinite;
+                    transform-origin: 50% 50%;
+                    stroke-opacity: 1;
+                  }
+                  @keyframes size{
+                    0% { transform: scale(0); }
+                    100% { transform: scale(1); }
+                  }
+                  @keyframes opacity {
+                    0% { stroke-opacity: 1; }
+                    100% { stroke-opacity: 0; }
+                  }
+                  #p2 { animation-delay: -.9s; }
+                ]]>
+                </style>
+                <g fill="none" fill-rule="evenodd" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round">
+                  <polygon id="p1" points="30 1.9 6 15.95 6 44.05 30 58.1 54 44.05 54 15.95 30 1.9"/>
+                  <polygon id="p2" points="30 1.9 6 15.95 6 44.05 30 58.1 54 44.05 54 15.95 30 1.9"/>
+                </g>
+              </svg>
+
+
+          </div>
+          <div class="sg-example">
+            <span class="loader-text">
+              <img src="loaders/hexagon-loader-small.svg" alt="Loading…">
+              <span>Waiting…</span>
+            </span>
+            <span class="loader-text">
+              <img src="loaders/hexagon-loader-small-green.svg" alt="Loading…">
+              <span>Looking for peers…</span>
+            </span>
           </div>
         </div>
       </div>

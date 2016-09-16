@@ -1,0 +1,28 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+  <style type="text/css">
+  <![CDATA[
+    #p1, #p2 {
+      animation:
+        size cubic-bezier(0.165, 0.84, 0.44, 1) 1.8s,
+        opacity cubic-bezier(0.3, 0.61, 0.355, 1) 1.8s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+      stroke-opacity: 1;
+    }
+    @keyframes size{
+      0% { transform: scale(0); }
+      100% { transform: scale(1); }
+    }
+    @keyframes opacity {
+      0% { stroke-opacity: 1; }
+      100% { stroke-opacity: 0; }
+    }
+    #p2 { animation-delay: -.9s; }
+  ]]>
+  </style>
+  <g fill="none" fill-rule="evenodd" stroke-width="4" stroke-linecap="round"
+  stroke-linejoin="round">
+    <polygon id="p1" points="12 2 3 7 3 17 12 22 21 17 21 7 12 2"/>
+    <polygon id="p2" points="12 2 3 7 3 17 12 22 21 17 21 7 12 2"/>
+  </g>
+</svg>
