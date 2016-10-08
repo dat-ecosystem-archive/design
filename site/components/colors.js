@@ -1,4 +1,22 @@
 const yo = require('yo-yo')
+const fs = require('fs')
+
+const colorsScss = fs.readFileSync('../scss/variables/colors.scss', 'utf8')
+
+function parse (scss) {
+  return scss.split('\n').reduce(function(obj, line){
+    if(!line) {
+      return obj
+    }
+    const pair = line.split(':')
+    const key = pair[0].trim()
+    const value = pair[1].trim().slice(0, -1)
+    obj[key] = value
+    return obj
+  }, {})
+}
+
+const colors = parse(colorsScss)
 
 module.exports = function () {
   return yo`
@@ -47,6 +65,20 @@ module.exports = function () {
       <p>
         Use blue, red and yellow for UI purposes like warnings, errors, notifications etc. These colors can also be used for decorative purposes.
       </p>
+    </div>
+    <h3 class="hd-xxs sg-label">Complete List of Colors</h3>
+    <div class="sg-subsection">
+      <ul>
+        ${Object.keys(colors).map(function(scssVar){
+          const hex = colors[scssVar]
+          return yo`
+            <li>
+              <span style="background-color: ${hex}; width: 10px; height: 10px; display: inline-block;"></span>
+              ${hex} ${scssVar}
+            </li>
+          `
+        })}
+      </ul>
     </div>
   </div>
   `
