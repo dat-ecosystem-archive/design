@@ -1,5 +1,6 @@
 # dat-design
 
+[![NPM version][npm-image]][npm-url]
 [![Join the chat at https://gitter.im/datproject/design](https://badges.gitter.im/datproject/design.svg)](https://gitter.im/datproject/design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 design resources and assets for the [dat project](http://dat-data.com)
@@ -125,3 +126,7 @@ Dat-design comes with ready-to-use logo assets, such as logos and SVG icons in `
 ## Is something missing?
 
 If some dat project is in need of a new design element or concept please open an issue!
+
+
+[npm-image]: https://img.shields.io/npm/v/dat-design.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/dat-design
