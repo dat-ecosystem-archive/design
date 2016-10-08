@@ -1,6 +1,7 @@
 # dat-design
 
 [![Join the chat at https://gitter.im/datproject/design](https://badges.gitter.im/datproject/design.svg)](https://gitter.im/datproject/design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 design resources and assets for the [dat project](http://dat-data.com)
 
 to build and/or develop on this module:
