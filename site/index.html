@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>dat design</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/styleguide.css" />
+  </head>
+  <body>
+    <header class="sg-header">
+      <div class="sg-container">
+        <h1>
+          <img src="downloads/dat-hexagon.svg" style="width: 34px;" />
+          dat <span>design</span>
+        </h1>
+      </div>
+    </header>
+    <main class="sg-main">
+      <div class="sg-container">
+        <div class="sg-section">
+          <p>
+            This is the style guide for <a href="http://dat-data.com/">Dat</a>, an open source, decentralized data tool for distributing datasets. This styleguide provides general design guidance for dat projects, and also comes with an <a href="https://github.com/datproject/design#dat-design-api">API</a> for importing (s)css assets into your projects. If some dat project is in need of a new design element or concept please <a href="https://github.com/datproject/design/issues">open an issue</a>.
+          </p>
+        </div>
+        <div class="sg-section">
+    <h2>Dat Logo</h2>
+    <h3 class="hd-xxs sg-label">Dat Data Logo</h3>
+    <div class="sg-subsection">
+      <p>
+        <img src="downloads/dat-data-logo.svg" alt="Dat Data Logo" class="sg-subsection__img" />
+        This is the Dat logo. It consists of the hexagon in Dat green and the centered "dat DATA" set in Source Sans. Only use it when it can be displayed at least 60px tall, in order to keep the text legible.
+      </p>
+      <p>
+        <a href="downloads/dat-data-logo.svg">Download .svg</a> | <a href="downloads/dat-data-logo.png">Download .png</a>
+      </p>
+    </div>
+    <h3 class="hd-xxs sg-label">Dat Hexagon</h3>
+    <div class="sg-subsection">
+      <p>
+        <img src="downloads/dat-hexagon.svg" alt="Dat Hexagon" class="sg-subsection__img" />
+        Use the green hexagon without text when the logo is displayed in small sizes, e.g. in small header bars or favicons.
+      </p>
+      <p>
+        <a href="downloads/dat-hexagon.svg">Download .svg</a> | <a href="downloads/dat-hexagon.png">Download .png</a>
+      </p>
+    </div>
+  </div>
+        <div class="sg-section">
+    <h2>Dat Palette</h2>
+    <h3 class="hd-xxs sg-label">Neutral Color Shades</h3>
+    <div class="sg-subsection">
+      <div class="color-blocks">
+        <div class="color-block--neutral">
+        </div>
+        <div class="color-block--neutral--90">
+        </div>
+        <div class="color-block--neutral--70">
+        </div>
+        <div class="color-block--neutral--50">
+        </div>
+        <div class="color-block--neutral--30">
+        </div>
+        <div class="color-block--neutral--10">
+        </div>
+      </div>
+      <p>
+        Use the dark blue for all text. Also use this color and its various shades for form elements, borders and other neutral elements.
+      </p>
+    </div>
+    <h3 class="hd-xxs sg-label">Brand Color</h3>
+    <div class="sg-subsection">
+      <div class="color-blocks">
+        <div class="color-block--green">
+        </div>
+      </div>
+      <p>
+        Dat Green is the brand color and is used in the logo. It’s also the default color for links and important buttons.
+      </p>
+    </div>
+    <h3 class="hd-xxs sg-label">UI and Highlight Colors</h3>
+    <div class="sg-subsection">
+      <div class="color-blocks">
+        <div class="color-block--info">
+        </div>
+        <div class="color-block--danger">
+        </div>
+        <div class="color-block--warning">
+        </div>
+      </div>
+      <p>
+        Use blue, red and yellow for UI purposes like warnings, errors, notifications etc. These colors can also be used for decorative purposes.
+      </p>
+    </div>
+  </div>
+        <div class="sg-section">
+    <h2>Dat Typography</h2>
+    <h3 class="hd-xxs sg-label">Typeface</h3>
+    <div class="sg-subsection">
+      <p>
+        The dat typeface is Source Sans Pro, Adobe’s first open source typeface family.
+        It is a sans serif typeface intended to work well in user interfaces. The complete family is <a href="https://fonts.google.com/specimen/Source+Sans+Pro">available on Google Fonts</a>.
+      </p>
+      <p>
+        To embed Source Sans Pro into a webpage, copy this code into the <head> of your HTML document:
+      </head>
+      <pre class="sg-pre"><code>&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;</code></pre>
+      <p>
+        And use the following CSS to specify this font-family:
+      </p>
+      <pre class="sg-pre"><code>font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;</code></pre>
+    </p>
+    <h3 class="hd-xxs sg-label">Headings</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <h1>This is an example heading</h1>
+        <p class="sg-meta">
+          Heading 1
+        </p>
+        <h2>This is an example heading</h2>
+        <p class="sg-meta">
+          Heading 2
+        </p>
+        <h3>This is an example heading</h3>
+        <p class="sg-meta">
+          Heading 3
+        </p>
+        <h4>This is an example heading</h4>
+        <p class="sg-meta">
+          Heading 4
+        </p>
+        <h5>This is an example heading</h5>
+        <p class="sg-meta">
+          Heading 5
+        </p>
+        <h6>This is an example heading</h6>
+        <p class="sg-meta">
+          Heading 6
+        </p>
+      </div>
+      <p>
+        For text-heavy websites that are optimized for readability (documentation, dat website etc.), set the default font-size to 100% of the browser style sheet and use the rem unit to size the text and almost every other element. The rem unit is relative to the root element. That allows us to define a single font size on the html element and define all rem units to be a percentage of that. E.g. 1rem = 16px, 1.5rem = 24px, 28px = 1.75rem …
+      </p>
+      <p>
+        The headings’ line-height is the sum of the font-size + 0.5rem.
+      </p>
+    </div>
+  </div>
+  </div>
+        <div class="sg-section">
+    <h2>Paragraphs, Lists and Blockquotes</h2>
+    <h3 class="hd-xxs sg-label">Paragraphs</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <p class="lead">
+          This is a lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <h3 class="hd-xxs sg-label">Unordered List</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <ul>
+          <li>a list item</li>
+          <li>another list item</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li>one more thing on a list</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="hd-xxs sg-label">Ordered List</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <ol>
+          <li>a list item</li>
+          <li>another list item</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        </ol>
+      </div>
+    </div>
+    <h3 class="hd-xxs sg-label">Plain Lists</h3>
+    <div class="sg-subsection">
+      <p>You can add <code class="sg-code">class="list-plain"</code> to <code class="sg-code">&amp;lt;ul&amp;gt;</code> and <code class="sg-code">&amp;lt;ol&amp;gt;</code> elements to remove the padding, margin, and list-style-type easily. There is also an scss mixin by the same name available.</p>
+      <div class="sg-example">
+        <ol class="list-plain">
+          <li>a list item from an &amp;lt;ol&amp;gt; with class="list-plain"</li>
+          <li>another list item</li>
+          <li>etc</li>
+        </ol>
+      </div>
+    </div>
+    <h3 class="hd-xxs sg-label">Blockquote</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <figure class="blockquote">
+          <blockquote>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </blockquote>
+          <figcaption>
+            – Source of the Quote
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+        <div class="sg-section">
+    <h2>Dat Links</h2>
+    <h3 class="hd-xxs sg-label">Default Links</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <p>
+          Default links are green and look like this: <a href="#" class="link--green">Default Link</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#">Default Link</a> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <h3 class="hd-xxs sg-label">Other Links</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <a href="#" class="link--info">Info Link</a>
+        <br />
+        <a href="#" class="link--warning">Warning Link</a>
+        <br />
+        <a href="#" class="link--danger">Error/Danger Link</a>
+        <br />
+        <a href="#" class="link--disabled">Disabled Link</a>
+        <!-- br="br">
+        <a href="#" disabled="disabled" class="link--green">Disabled Link</a>
+      </!-->
+    </div>
+  </div>
+  </div>
+        <div class="sg-section">
+    <h2>Dat Buttons</h2>
+    <h3 class="hd-xxs sg-label">Button Colors</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <p>
+          <a href="#" class="btn">Default Button</a>
+        </p>
+        <p>
+          <a href="#" class="btn btn--green">Green Button</a>
+        </p>
+        <p>
+          <a href="#" class="btn btn--info">Info Button</a>
+        </p>
+        <p>
+          <a href="#" class="btn btn--warning">Warning Button</a>
+        </p>
+        <p>
+          <a href="#" class="btn btn--danger">Error/Danger Button</a>
+        </p>
+        <p>
+          <a href="#" class="btn btn--disabled">Disabled Button</a>
+        </p>
+        <!-- a="a" href="#" disabled="disabled" class="btn btn--green">Disabled Button</!-->
+      </div>
+    </div>
+    <h3 class="hd-xxs sg-label">Button Sizes</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <a href="#" class="btn btn--green btn--small">Small Button</a>
+        <a href="#" class="btn btn--green">Default Button</a>
+        <a href="#" class="btn btn--green btn--large">Large Button</a>
+        <a href="#" class="btn btn--green btn--cta">CTA Button</a>
+      </div>
+    </div>
+  </div>
+        <div class="sg-section">
+    <h2>Dat Transitions</h2>
+    For consistent transitions, use the transition variables <code class="sg-code">$transition-duration</code> and <code class="sg-code">$transition-timing-function</code>.
+  </div>
+        <div class="sg-section">
+    <h2>Dat Progress Bar</h2>
+    <h3 class="hd-xxs sg-label">Progress Bar</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <div class="progress">
+          <div class="progress__counter">
+            70%
+          </div>
+          <div class="progress__bar">
+            <div style="width: 70%" class="progress__line progress__line--loading"></div>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress__counter">
+            100%
+          </div>
+          <div class="progress__bar">
+            <div style="width: 100%" class="progress__line progress__line--complete"></div>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress__counter">
+            20%
+          </div>
+          <div class="progress__bar">
+            <div style="width: 20%" class="progress__line progress__line--paused"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="sg-section">
+    <h2>Dat Form Elements</h2>
+    <h3 class="hd-xxs sg-label">Dat Link Input</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <div class="dat-import">
+          <div class="dat-import--icon">
+            <img src="./public/img/link.svg" />
+          </div>
+          <input type="text" placeholder="datlinks go here" class="dat-import--input" />
+        </div>
+        <p class="sg-meta">
+          This is used on green top bars.
+        </p>
+      </div>
+    </div>
+  </div>
+        <div class="sg-section">
+    <h2>Dat Icons [work in progress]</h2>
+    <h3 class="hd-xxs sg-label"></h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-clipboard"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-create-new-dat"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-download"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-edit-dat"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-file"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-folder"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-hexagon-outlines"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-import-dat"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-link"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-loading"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-lock"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-open-in-desktop"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-open-in-finder"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-sad-dat"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-happy-dat"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-star-dat"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-question"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-delete"></use>
+              </svg>
+
+              <svg class="daticon">
+                <use xlink:href="public/svg/sprite.svg#daticon-menu"></use>
+              </svg>
+
+      </div>
+    </div>
+  </div>
+      </div>
+    </main>
+  </body>
+</html>

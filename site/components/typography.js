@@ -1,0 +1,59 @@
+const yo = require('yo-yo')
+
+module.exports = function () {
+  return yo`
+  <div class="sg-section">
+    <h2>Dat Typography</h2>
+    <h3 class="hd-xxs sg-label">Typeface</h3>
+    <div class="sg-subsection">
+      <p>
+        The dat typeface is Source Sans Pro, Adobe’s first open source typeface family.
+        It is a sans serif typeface intended to work well in user interfaces. The complete family is <a href="https://fonts.google.com/specimen/Source+Sans+Pro">available on Google Fonts</a>.
+      </p>
+      <p>
+        To embed Source Sans Pro into a webpage, copy this code into the <head> of your HTML document:
+      </p>
+      <pre class="sg-pre"><code>&lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+      <p>
+        And use the following CSS to specify this font-family:
+      </p>
+      <pre class="sg-pre"><code>font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;</code></pre>
+    </div>
+    <h3 class="hd-xxs sg-label">Headings</h3>
+    <div class="sg-subsection">
+      <div class="sg-example">
+        <h1>This is an example heading</h1>
+        <p class="sg-meta">
+          Heading 1
+        </p>
+        <h2>This is an example heading</h2>
+        <p class="sg-meta">
+          Heading 2
+        </p>
+        <h3>This is an example heading</h3>
+        <p class="sg-meta">
+          Heading 3
+        </p>
+        <h4>This is an example heading</h4>
+        <p class="sg-meta">
+          Heading 4
+        </p>
+        <h5>This is an example heading</h5>
+        <p class="sg-meta">
+          Heading 5
+        </p>
+        <h6>This is an example heading</h6>
+        <p class="sg-meta">
+          Heading 6
+        </p>
+      </div>
+      <p>
+        For text-heavy websites that are optimized for readability (documentation, dat website etc.), set the default font-size to 100% of the browser style sheet and use the rem unit to size the text and almost every other element. The rem unit is relative to the root element. That allows us to define a single font size on the html element and define all rem units to be a percentage of that. E.g. 1rem = 16px, 1.5rem = 24px, 28px = 1.75rem …
+      </p>
+      <p>
+        The headings’ line-height is the sum of the font-size + 0.5rem.
+      </p>
+    </div>
+  </div>
+  `
+}
