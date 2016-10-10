@@ -1,0 +1,16 @@
+<div class="sg-section">
+  <h2>Dat Icons [work in progress]</h2>
+  <h3 class="hd-xxs sg-label"></h3>
+  <div class="sg-subsection">
+    <div class="sg-example">
+      {{#each icons}}
+        <figure class="sg-icon-block">
+          <svg class="daticon">
+            <use xlink:href="#daticon-{{.}}" />
+          </svg>
+          <caption>{{.}}</caption>
+        </figure>
+      {{/each}}
+    </div>
+  </div>
+</div>

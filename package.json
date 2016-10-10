@@ -10,7 +10,8 @@
   "scripts": {
     "build-css": "node-sass --importer node_modules/node-sass-magic-importer --include-path scss scss/base.scss   public/css/base.css  && node-sass --importer node_modules/node-sass-magic-importer --include-path scss scss/styleguide.scss  site/css/styleguide.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "build-icons": "svgo -f icons && spritesh --input icons --output public/svg/sprite.svg --viewbox '0 0 240 240' --prefix daticon-"
+    "build-icons": "svgo -f icons && spritesh --input icons --output public/svg/sprite.svg --viewbox '0 0 240 240' --prefix daticon-",
+    "watch-site": "nodemon --watch site -x \"node site/render.js\""
   },
   "repository": {
     "type": "git",
@@ -20,17 +21,21 @@
     "url": "https://github.com/datproject/design/issues"
   },
   "devDependencies": {
+    "dat-icons": "^1.3.0",
     "node-sass": "^3.7.0",
     "node-sass-magic-importer": "^0.1.4",
     "nodemon": "^1.9.2",
     "spritesh": "^1.2.0",
     "svgo": "^0.7.0",
-    "yo-yo": "^1.3.0"
+    "glob": "^7.1.1",
+    "handlebars": "^4.0.5"
   },
   "keywords": [
     "css-module",
     "css",
     "dat",
     "datproject"
-  ]
+  ],
+  "dependencies": {
+  }
 }

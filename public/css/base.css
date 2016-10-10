@@ -648,11 +648,11 @@ a[disabled],
   position: absolute;
   top: calc(1.5rem - (1.5rem / 2));
   left: 1rem;
-  pointer-events: none; }
-  .dat-import--icon img {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem; }
+  pointer-events: none;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #A7AFB6; }
 
 .dat-import--input {
   height: 3rem;

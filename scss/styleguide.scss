@@ -159,9 +159,16 @@
   overflow-x: auto;
 }
 
+.sg-icon-block {
+  display: inline-block;
+  text-align: center;
+}
+
 .daticon {
+  display: block;
   width: 96px;
   height: 96px;
+  margin: 0 auto;
   padding: 1rem;
   fill: currentColor;
 }
