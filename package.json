@@ -9,9 +9,9 @@
   "style": "public/css/base.css",
   "scripts": {
     "build-css": "node-sass --importer node_modules/node-sass-magic-importer --include-path scss scss/base.scss   public/css/base.css  && node-sass --importer node_modules/node-sass-magic-importer --include-path scss scss/styleguide.scss  site/css/styleguide.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "watch-css": "nodemon -e scss -x 'npm run build-css'",
     "build-icons": "svgo -f icons && spritesh --input icons --output public/svg/sprite.svg --viewbox '0 0 240 240' --prefix daticon-",
-    "watch-site": "nodemon --watch site -x \"node site/render.js\""
+    "watch-site": "cd site && watch 'node render.js'"
   },
   "repository": {
     "type": "git",

@@ -27,7 +27,7 @@ Handlebars.registerPartial('svgSprite', svgSprite())
 const index = Handlebars.compile(readTemplate('index'))
 
 // Render root template
-fs.writeFileSync('./index.html', index({
+fs.writeFileSync(__dirname + '/index.html', index({
   colors: parseColorVars(colorsScss),
   icons: icons
 }))

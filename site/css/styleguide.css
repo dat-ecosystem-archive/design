@@ -1843,6 +1843,19 @@ textarea {
     height: 72px;
     padding: 22px 10px; }
 
+.sg-color-list {
+  list-style: none;
+  padding: 0; }
+  .sg-color-list li {
+    padding: .25rem 0; }
+
+.sg-color-circle {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .5rem; }
+
 .sg-code {
   font-size: 1rem;
   font-family: monospace;
@@ -1858,14 +1871,22 @@ textarea {
   padding: 1rem;
   overflow-x: auto; }
 
-.sg-icon-block {
-  display: inline-block;
-  text-align: center; }
+.sg-icon-list {
+  display: flex;
+  flex-wrap: wrap; }
 
-.daticon {
-  display: block;
-  width: 96px;
-  height: 96px;
-  margin: 0 auto;
-  padding: 1rem;
-  fill: currentColor; }
+.sg-icon-block {
+  flex: 0 1 20%;
+  text-align: center;
+  margin: 0;
+  padding: .5rem; }
+  .sg-icon-block .daticon {
+    display: block;
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0 auto;
+    padding: .5rem;
+    fill: currentColor; }
+  .sg-icon-block figcaption {
+    font-size: .75rem;
+    color: #7C8792; }
