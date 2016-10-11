@@ -5,7 +5,11 @@
 
 design resources and assets for the [dat project](http://dat-data.com)
 
-to build and/or develop on this module:
+## Build and deploy documentation website
+
+run `./scripts/build`
+
+## Build and/or develop on this module:
 
 ```shell
 npm install
