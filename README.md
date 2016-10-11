@@ -5,10 +5,9 @@
 
 design resources and assets for the [dat project](http://dat-data.com)
 
-## Build documentation website
+## Build and deploy documentation website
 
-run `./scripts/build `
-
+run `./scripts/build`
 
 ## Build and/or develop on this module:
 
