@@ -1,0 +1,18 @@
+#!/bin/sh
+
+dirname=$(dirname "$(greadlink -f "$0")")
+node_modules="$(greadlink -f "$dirname/../node_modules/.bin")"
+PATH="$PATH:$node_modules"
+
+# build
+rm -rf dist/
+mkdir -p dist/downloads
+cp downloads/* dist/downloads/
+node-sass \
+  --importer node_modules/node-sass-magic-importer \
+  --include-path scss scss/styleguide.scss \
+  dist/styleguide.css
+node site/render.js
+
+# deploy
+gh-pages -d dist
