@@ -14,13 +14,8 @@ run `./scripts/build`
 ```shell
 npm install
 npm run watch-css
-open index.html
-```
-
-to build SVG sprite:
-
-```shell
-npm run build-icons
+npm run watch-site
+open site/index.html
 ```
 
 ## <a name="dat-design-api"></a>api for importing (s)css assets into other projects
@@ -93,39 +88,9 @@ Dat-design includes a toolkit of utility classes ([Basscss](https://github.com/b
 
 There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [Dat Styleguide](http://datproject.github.io/design/).
 
-## How To Use Dat Icons in Your Project (work in progress)
+#### Logo and Image Assets
 
-The dat-design package comes with a set of dat-specific icons. All available icons are documented in the [Dat Styleguide](http://datproject.github.io/design/).
-
-### Inlining SVG
-
-By inlining the SVG code, you’ll be able to style the contents of the SVG. Just copy the code of an individual icon file and insert it in your template like:
-
-```html
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><title>Title of this svg</title><path d="M76 120a12 12 0 0 0 12 12h64a12 12 0 0 0 0-24H88a12 12 0 0 0-12 12z"/><path d="M35 120a35 35 0 0 1 35-35h38V65H70a55 55 0 0 0 0 110h38v-20H70a35 35 0 0 1-35-35zm135-55h-38v20h38a35 35 0 1 1 0 70h-38v20h38a55 55 0 0 0 0-110z"/></svg>
-```
-
-### SVG Sprite + `<use>`
-A more performant and convenient way of inlining SVG icons is to do so via referencing them from an icon sprite. An optimized sprite is included in this package (``./../node_modules/dat-design/public/svg/sprite.svg`). Include this sprite in your layout file, and the individual icons can be referenced like this:
-
-```html
-<svg class="daticon">
-  <use xlink:href="#daticon-edit-dat"></use>
-</svg>
-```
-
-### External SVG Sprite (won’t work in lte IE 11)
-Instead of including the sprite in your layout file, you can link to it as an external resource. Note that this is only supported in the latest browsers, IE 11 not included.
-
-```html
-<svg class="daticon">
-  <use xlink:href="public/svg/sprite.svg#daticon-edit-dat"></use>
-</svg>
-```
-
-#### Logo Assets
-
-Dat-design comes with ready-to-use logo assets, such as logos and SVG icons in `./../node_modules/dat-design/public`.
+Dat-design comes with ready-to-use logo assets, such as logos and SVG icons in `./../node_modules/dat-design/public/img`.
 
 ## Is something missing?
 
