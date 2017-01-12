@@ -3,15 +3,45 @@
   <h3 class="hd-xxs sg-label">Dat Link Input</h3>
   <div class="sg-subsection">
     <div class="sg-example">
-      <div class="dat-import">
-        <svg class="dat-import--icon">
+
+      <h6>Normal Input</h6>
+      <label for="test01" class="dat-input">
+        <input name="test01" type="text" placeholder="E-mail" name="email" class="dat-input__input">
+      </label>
+      <a href="#" class="btn btn--green">Default Button</a>
+      <br><br>
+
+      <h6>Input with Icon</h6>
+      <label for="test02a" class="dat-input dat-input--icon">
+        <input name="test02a" type="text" placeholder="User Name" name="email" class="dat-input__input dat-input__input--icon">
+        <svg class="dat-input__icon">
+          <use xlink:href="#daticon-happy-dat" />
+        </svg>
+      </label>
+      <br><br>
+      <label for="test02b" class="dat-input dat-input--icon">
+        <input name="test02b" type="text" placeholder="E-mail" name="email" class="dat-input__input dat-input__input--icon">
+        <svg class="dat-input__icon">
+          <use xlink:href="#daticon-letter" />
+        </svg>
+      </label>
+      <br><br>
+      <label for="test02c" class="dat-input dat-input--icon">
+        <input name="test02c" type="password" placeholder="Password" name="password" class="dat-input__input dat-input__input--icon">
+        <svg class="dat-input__icon">
+          <use xlink:href="#daticon-lock" />
+        </svg>
+      </label>
+      <br><br>
+
+      <h6>Import Dat Input</h6>
+      <label for="test03" class="dat-input">
+        <input name="test03" type="text" placeholder="Import Dat" class="dat-input__input dat-input__input--icon dat-input__input--no-border">
+        <svg class="dat-input__icon">
           <use xlink:href="#daticon-link" />
         </svg>
-        <input type="text" placeholder="datlinks go here" class="dat-import--input">
       </div>
-      <p class="sg-meta">
-        This is used on green top bars.
-      </p>
+
     </div>
   </div>
 </div>

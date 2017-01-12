@@ -2,14 +2,14 @@
 
 /* styleguide layout */
 .sg-header {
-  background-color: $color-neutral--04;
-  border-bottom: 1px solid $color-neutral--10;
+  background-color: $color-neutral-04;
+  border-bottom: 1px solid $color-neutral-10;
   height: 60px;
   h1 {
     margin: 0;
     line-height: 58px;
     span {
-      color: $color-neutral--60;
+      color: $color-neutral-60;
     }
   }
   .sg-container {
@@ -40,20 +40,20 @@
 
 .sg-meta {
   font-size: .875rem;
-  color: $color-neutral--50;
+  color: $color-neutral-50;
 }
 
 .sg-example {
   margin-bottom: 1rem;
   padding: 1.5rem 1rem;
-  border: 1px solid $color-neutral--30;
+  border: 1px solid $color-neutral-30;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .sg-label {
   font-size: .875rem;
-  color: $color-neutral--60;
+  color: $color-neutral-60;
   margin-bottom: 1rem;
   @include uppercase;
   @media (min-width: 640px) {
@@ -112,22 +112,22 @@
   @include color-block($color-neutral);
 }
 .color-block--neutral--90 {
-  @include color-block($color-neutral--90);
+  @include color-block($color-neutral-90);
 }
 .color-block--neutral--70 {
-  @include color-block($color-neutral--70);
+  @include color-block($color-neutral-70);
 }
 .color-block--neutral--50 {
-  @include color-block($color-neutral--50);
+  @include color-block($color-neutral-50);
 }
 .color-block--neutral--30 {
-  @include color-block($color-neutral--30);
+  @include color-block($color-neutral-30);
 }
 .color-block--neutral--10 {
-  @include color-block($color-neutral--10);
+  @include color-block($color-neutral-10);
 }
 .color-block--neutral--50 {
-  @include color-block($color-neutral--50);
+  @include color-block($color-neutral-50);
 }
 .color-block--green {
   @include color-block($color-green);
@@ -161,16 +161,16 @@
 .sg-code {
   font-size: 1rem;
   font-family: monospace;
-  color: $color-neutral--80;
-  background-color: $color-neutral--04;
+  color: $color-neutral-80;
+  background-color: $color-neutral-04;
   padding: 1px;
 }
 
 .sg-pre {
   font-size: 1rem;
   font-family: monospace;
-  color: $color-neutral--80;
-  background-color: $color-neutral--04;
+  color: $color-neutral-80;
+  background-color: $color-neutral-04;
   padding: 1rem;
   overflow-x: auto;
 }
@@ -195,6 +195,6 @@
   }
   figcaption {
     font-size: .75rem;
-    color: $color-neutral--60;
+    color: $color-neutral-60;
   }
 }

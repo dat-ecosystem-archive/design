@@ -15,7 +15,7 @@ run `./scripts/build`
 npm install
 npm run watch-css
 npm run watch-site
-open site/index.html
+open dist/index.html
 ```
 
 ## <a name="dat-design-api"></a>api for importing (s)css assets into other projects

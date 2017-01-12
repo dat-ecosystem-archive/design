@@ -20,35 +20,35 @@ body {
 
 .hd-xl, h1 {
   font-size: 2.5rem;
-  line-height: 2.5rem + 0.5rem;  // 3rem
+  line-height: 1.25;
   margin-bottom: 1rem;
 }
 
 .hd-l, h2 {
   font-size: 2.25rem;
-  line-height: 2.25rem + 0.5rem;
+  line-height: 1.25;
   margin-bottom: 1rem;
 }
 
 .hd-m, h3 {
   font-size: 1.75rem;
-  line-height: 1.75rem + 0.5rem;
+  line-height: 1.25;
   margin-bottom: 1rem;
 }
 
 .hd-s, h4 {
   font-size: 1.5rem;
-  line-height: 1.5rem + 0.5rem;
+  line-height: 1.25;
 }
 
 .hd-xs, h5 {
   font-size: 1.25rem;
-  line-height: 1.25rem + 0.5rem;
+  line-height: 1.25;
 }
 
 .hd-xxs, h6 {
   font-size: .875rem;
-  line-height: .875rem + 0.5rem;
+  line-height: 1.25;
   @include uppercase;
 }
 
@@ -65,12 +65,13 @@ body {
 .blockquote {
   margin-left: 0;
   padding-left: 1rem;
-  border-left: 4px solid $color-neutral--20;
+  border-left: 4px solid $color-neutral-20;
   blockquote {
     margin: 0;
   }
   figcaption {
     font-size: .875rem;
-    color: $color-neutral--60;
+    line-height: 1.25;
+    color: $color-neutral-60;
   }
 }

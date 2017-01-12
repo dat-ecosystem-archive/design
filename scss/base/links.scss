@@ -1,18 +1,18 @@
 // links
 a {
-  color: $color-green;
+  color: $color-info;
 }
 
 a:hover,
 a:focus {
-  color: $color-green--hover;
+  color: $color-info-hover;
 }
 
-.link--info {
-  color: $color-info;
+.link--green {
+  color: $color-green;
   &:hover,
   &:focus{
-    color: $color-info--hover;
+    color: $color-green-hover;
   }
 }
 
@@ -20,7 +20,7 @@ a:focus {
   color: $color-warning;
   &:hover,
   &:focus{
-    color: $color-warning--hover;
+    color: $color-warning-hover;
   }
 }
 
@@ -28,15 +28,15 @@ a:focus {
   color: $color-danger;
   &:hover,
   &:focus{
-    color: $color-danger--hover;
+    color: $color-danger-hover;
   }
 }
 
 a[disabled],
 .link--disabled {
-  color: $color-neutral--40;
+  color: $color-neutral-40;
   &:hover,
   &:focus{
-    color: $color-neutral--40;
+    color: $color-neutral-40;
   }
 }

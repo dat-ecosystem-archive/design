@@ -487,9 +487,9 @@ a:hover,
 a:focus {
   color: #24943A; }
 
-.link--info {
+.link--green {
   color: #2980B9; }
-  .link--info:hover, .link--info:focus {
+  .link--green:hover, .link--green:focus {
     color: #1B679A; }
 
 .link--warning {
@@ -640,11 +640,11 @@ a[disabled],
   font-size: .875rem;
   color: #7C8792; }
 
-.dat-import {
+.dat-input {
   position: relative;
   overflow: hidden; }
 
-.dat-import--icon {
+.dat-input__icon {
   position: absolute;
   top: calc(1.5rem - (1.5rem / 2));
   left: 1rem;
@@ -654,7 +654,7 @@ a[disabled],
   height: 1.5rem;
   fill: #A7AFB6; }
 
-.dat-import--input {
+.dat-input__input {
   height: 3rem;
   padding-right: 1rem;
   padding-left: 3rem;
@@ -662,7 +662,7 @@ a[disabled],
   border: 1px solid #24943A;
   color: #7C8792;
   text-transform: uppercase; }
-  .dat-import--input:hover, .dat-import--input:focus, .dat-import--input:active {
+  .dat-input__input:hover, .dat-input__input:focus, .dat-input__input:active {
     outline: none;
     color: #293648; }
 

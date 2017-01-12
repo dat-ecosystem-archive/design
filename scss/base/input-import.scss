@@ -1,39 +1,52 @@
 // example:
-// <div class="dat-import">
-//   <div class="dat-import--icon">
+// <div class="dat-input">
+//   <div class="dat-input__icon">
 //     <img src="./public/img/link.svg" />
 //   </div>
-//   <input type="text" readonly="true" value="" id="share-link" data-intro="" class="dat-import--input">
+//   <input type="text" readonly="true" value="" id="share-link" data-intro="" class="dat-input__input">
 // </div>
 
-// dat-import
-.dat-import {
+
+$input-height: 2.25rem;
+$icon-height: 1.5rem;
+
+// dat-input
+.dat-input {
+  display: inline-block;
   position: relative;
   overflow: hidden;
+  vertical-align: middle;
 }
 
-.dat-import--icon {
-  $icon-height: 1.5rem;
+.dat-input__icon {
   position: absolute;
-  top: calc(1.5rem - (#{$icon-height} / 2));
-  left: 1rem;
+  top: calc(50% - (#{$icon-height} / 2));
+  left: .75rem;
   pointer-events: none;
   display: block;
   width: $icon-height;
   height: $icon-height;
-  fill: $color-neutral--40;
+  fill: $color-neutral-20;
 }
 
-.dat-import--input {
-  height: 3rem;
-  padding-right: 1rem;
-  padding-left: 3rem;
-  border-radius: 2px;
-  border: 1px solid $color-green--hover;
-  color: $color-neutral--60;
+.dat-input__input {
+  height: $input-height;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  border: 1px solid $color-neutral-30;
+  color: $color-neutral-60;
   text-transform: uppercase;
   &:hover, &:focus, &:active {
     outline: none;
     color: $color-neutral;
+    border-color: $color-green;
   }
+}
+
+.dat-input__input--icon {
+  padding-left: 2.75rem;
+}
+
+.dat-input__input--no-border {
+  border: none;
 }

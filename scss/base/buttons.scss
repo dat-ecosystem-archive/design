@@ -2,12 +2,11 @@
 
 .btn {
   display: inline-block;
-  padding: .4rem .75rem;
-  border-radius: 3px;
+  padding: .375rem .75rem;
   border-width: 0;
   border-style: solid;
   border-color: currentColor;
-  background-color: $color-neutral--50;
+  background-color: $color-neutral-50;
   color: $color-white;
   text-decoration: none;
   cursor: pointer;
@@ -16,7 +15,7 @@
   vertical-align: middle;
   letter-spacing: .02em;
   &:hover, &:focus {
-    background-color: $color-neutral--60;
+    background-color: $color-neutral-60;
     color: $color-white;
     text-decoration: none;
     cursor: pointer;
@@ -28,7 +27,7 @@
   background-color: $color-green;
   &:hover, &:focus {
     color: $color-white;
-    background-color: $color-green--hover;
+    background-color: $color-green-hover;
   }
 }
 
@@ -36,7 +35,7 @@
   background-color: $color-info;
   &:hover, &:focus {
     color: $color-white;
-    background-color: $color-info--hover;
+    background-color: $color-info-hover;
   }
 }
 
@@ -44,7 +43,7 @@
   background-color: $color-warning;
   &:hover, &:focus {
     color: $color-white;
-    background-color: $color-warning--hover;
+    background-color: $color-warning-hover;
   }
 }
 
@@ -52,18 +51,18 @@
   background-color: $color-danger;
   &:hover, &:focus {
     color: $color-white;
-    background-color: $color-danger--hover;
+    background-color: $color-danger-hover;
   }
 }
 
 .btn[disabled],
 .btn--disabled {
-  background-color: $color-neutral--10;
-  color: $color-neutral--40;
+  background-color: $color-neutral-10;
+  color: $color-neutral-40;
   cursor: default;
   &:hover, &:focus {
-    background-color: $color-neutral--10;
-    color: $color-neutral--40;
+    background-color: $color-neutral-10;
+    color: $color-neutral-40;
     cursor: default;
   }
 }

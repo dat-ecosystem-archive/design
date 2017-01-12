@@ -15,7 +15,7 @@ $counter-width: 3rem;
   width: calc(100% - #{$counter-width});
   float: left;
   overflow: hidden;
-  background-color: $color-neutral--20;
+  background-color: $color-neutral-20;
   border-radius: 2px;
 }
 
@@ -64,7 +64,7 @@ $counter-width: 3rem;
 }
 
 .progress__line--paused {
-  background-color: $color-neutral--60;
+  background-color: $color-neutral-60;
 }
 
 .progress__counter {
@@ -73,5 +73,5 @@ $counter-width: 3rem;
   margin-top: -.4rem;
   text-align: right;
   font-size: .875rem;
-  color: $color-neutral--60;
+  color: $color-neutral-60;
 }
