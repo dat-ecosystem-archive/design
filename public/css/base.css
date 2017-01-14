@@ -482,25 +482,25 @@ body {
     color: #7C8792; }
 
 a {
-  color: #2980B9; }
+  color: #007fff; }
 
 a:hover,
 a:focus {
-  color: #1B679A; }
+  color: #0066cc; }
 
 .link--green {
-  color: #35B44F; }
+  color: #2aca4b; }
   .link--green:hover, .link--green:focus {
-    color: #24943A; }
+    color: #199e33; }
 
-.link--warning {
-  color: #F0C30E; }
-  .link--warning:hover, .link--warning:focus {
-    color: #C9A001; }
+.link--yellow {
+  color: #f2cd02; }
+  .link--yellow:hover, .link--yellow:focus {
+    color: #c4a500; }
 
-.link--danger {
+.link--red {
   color: #D8524E; }
-  .link--danger:hover, .link--danger:focus {
+  .link--red:hover, .link--red:focus {
     color: #B33C38; }
 
 a[disabled],
@@ -533,26 +533,26 @@ a[disabled],
     outline: 0; }
 
 .btn--green {
-  background-color: #35B44F; }
+  background-color: #2aca4b; }
   .btn--green:hover, .btn--green:focus {
     color: #FFFFFF;
-    background-color: #24943A; }
+    background-color: #199e33; }
 
-.btn--info {
-  background-color: #2980B9; }
-  .btn--info:hover, .btn--info:focus {
+.btn--blue {
+  background-color: #007fff; }
+  .btn--blue:hover, .btn--blue:focus {
     color: #FFFFFF;
-    background-color: #1B679A; }
+    background-color: #0066cc; }
 
-.btn--warning {
-  background-color: #F0C30E; }
-  .btn--warning:hover, .btn--warning:focus {
+.btn--yellow {
+  background-color: #f2cd02; }
+  .btn--yellow:hover, .btn--yellow:focus {
     color: #FFFFFF;
-    background-color: #C9A001; }
+    background-color: #c4a500; }
 
-.btn--danger {
+.btn--red {
   background-color: #D8524E; }
-  .btn--danger:hover, .btn--danger:focus {
+  .btn--red:hover, .btn--red:focus {
     color: #FFFFFF;
     background-color: #B33C38; }
 
@@ -602,7 +602,7 @@ a[disabled],
 .progress__line {
   width: 0%;
   height: 0.5rem;
-  background-color: #2980B9;
+  background-color: #007fff;
   border-radius: 2px; }
 
 .progress__line--loading {
@@ -627,7 +627,7 @@ a[disabled],
     animation: move-bg .75s linear infinite; }
 
 .progress__line--complete {
-  background-color: #35B44F; }
+  background-color: #2aca4b; }
 
 .progress__line--paused {
   background-color: #7C8792; }
@@ -666,7 +666,7 @@ a[disabled],
   .dat-input__input:hover, .dat-input__input:focus, .dat-input__input:active {
     outline: none;
     color: #293648;
-    border-color: #35B44F; }
+    border-color: #2aca4b; }
 
 .dat-input__input--icon {
   padding-left: 2.75rem; }

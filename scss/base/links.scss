@@ -1,11 +1,11 @@
 // links
 a {
-  color: $color-info;
+  color: $color-blue;
 }
 
 a:hover,
 a:focus {
-  color: $color-info-hover;
+  color: $color-blue-hover;
 }
 
 .link--green {
@@ -16,19 +16,19 @@ a:focus {
   }
 }
 
-.link--warning {
-  color: $color-warning;
+.link--yellow {
+  color: $color-yellow;
   &:hover,
   &:focus{
-    color: $color-warning-hover;
+    color: $color-yellow-hover;
   }
 }
 
-.link--danger {
-  color: $color-danger;
+.link--red {
+  color: $color-red;
   &:hover,
   &:focus{
-    color: $color-danger-hover;
+    color: $color-red-hover;
   }
 }
 

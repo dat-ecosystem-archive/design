@@ -31,27 +31,27 @@
   }
 }
 
-.btn--info {
-  background-color: $color-info;
+.btn--blue {
+  background-color: $color-blue;
   &:hover, &:focus {
     color: $color-white;
-    background-color: $color-info-hover;
+    background-color: $color-blue-hover;
   }
 }
 
-.btn--warning {
-  background-color: $color-warning;
+.btn--yellow {
+  background-color: $color-yellow;
   &:hover, &:focus {
     color: $color-white;
-    background-color: $color-warning-hover;
+    background-color: $color-yellow-hover;
   }
 }
 
-.btn--danger {
-  background-color: $color-danger;
+.btn--red {
+  background-color: $color-red;
   &:hover, &:focus {
     color: $color-white;
-    background-color: $color-danger-hover;
+    background-color: $color-red-hover;
   }
 }
 

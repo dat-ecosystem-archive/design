@@ -5,19 +5,34 @@
   background-color: $color-neutral-04;
   border-bottom: 1px solid $color-neutral-10;
   height: 60px;
-  h1 {
-    margin: 0;
-    line-height: 58px;
-    span {
-      color: $color-neutral-60;
-    }
-  }
   .sg-container {
     padding-top: 0;
   }
+}
+
+.dat-logo {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $color-neutral;
+  letter-spacing: .025em;
   img {
-    display: inline-block;
-    vertical-align: -5px;
+    display: block;
+    max-width: 2rem;
+    margin-right: .75rem;
+    transition: transform .5s ease-in-out;
+  }
+  span {
+    margin-left: .25rem;
+    color: $color-neutral-60;
+  }
+  &:hover, &:focus {
+    color: $color-neutral;
+    img {
+      transform: rotate(360deg);
+    }
   }
 }
 
@@ -132,14 +147,14 @@
 .color-block--green {
   @include color-block($color-green);
 }
-.color-block--info {
-  @include color-block($color-info);
+.color-block--blue {
+  @include color-block($color-blue);
 }
-.color-block--danger {
-  @include color-block($color-danger);
+.color-block--red {
+  @include color-block($color-red);
 }
-.color-block--warning {
-  @include color-block($color-warning);
+.color-block--yellow {
+  @include color-block($color-yellow);
 }
 
 .sg-color-list {
@@ -155,7 +170,7 @@
   height: 1rem;
   display: inline-block;
   vertical-align: middle;
-  margin-right: .5rem; 
+  margin-right: .5rem;
 }
 
 .sg-code {
