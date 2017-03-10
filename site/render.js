@@ -2,7 +2,7 @@ const Handlebars = require('handlebars')
 const fs = require('fs')
 const glob = require('glob')
 const path = require('path')
-const svgSprite = require('dat-icons')
+const datIcons = require('dat-icons')
 
 const partials = [
   'buttons', 'colors', 'elements', 'forms',
@@ -21,7 +21,7 @@ partials.forEach(function (name) {
 })
 
 // Register SVG partial
-Handlebars.registerPartial('svgSprite', svgSprite())
+Handlebars.registerPartial('datIcons', datIcons())
 
 // Compile root template
 const index = Handlebars.compile(readTemplate('index'))
