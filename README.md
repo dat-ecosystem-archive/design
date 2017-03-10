@@ -84,9 +84,9 @@ The SCSS version of dat-design provides you with [variables](https://github.com/
 
 There’s also a set of custom classes for dat-specific components, like buttons or loaders. Those components are documented in the [Dat Styleguide](http://datproject.github.io/design/).
 
-#### Logo and Image Assets
+#### Logo Assets
 
-Dat-design comes with ready-to-use logo assets, such as logos and SVG icons in `./../node_modules/dat-design/public/img`.
+Dat-design comes with ready-to-use logo assets, in `./../node_modules/dat-design/public/img`.
 
 ## Is something missing?
 
