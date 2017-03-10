@@ -1,5 +1,6 @@
 @import "normalize/default";
 @import "normalize/custom";
+@import "variables/breakpoints";
 @import "variables/colors";
 @import "variables/transitions";
 @import "base/typography";
@@ -9,8 +10,6 @@
 @import "base/progress";
 @import "base/input-import";
 @import "base/lists";
-@import "responsive/breakpoints";
-@import "basscss/default";
 
 body {
   color: $color-neutral;
@@ -22,7 +21,7 @@ button,
 input,
 select,
 textarea {
-  transition-property: background-color, color;
+  transition-property: background-color, color, border-color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
 }

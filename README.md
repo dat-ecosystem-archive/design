@@ -63,7 +63,7 @@ now, from within your `sample.scss` file, you can `@import` this `dat-design` np
 if there's no file path specified after the `dat-design` module name (like above), the `@import` rule resolves to the file defined by this module's `style` property in the package.json. you can also point at individual files within this module from within the scss files in your project to use mixins and variables:
 
 ```scss
-@import "~dat-design/responsive/breakpoints.scss"
+@import "~dat-design/base/buttons.scss"
 ```
 
 node-sass-magic-importer offers lots of other options in addition to these as well.
@@ -79,10 +79,6 @@ Dat-design uses [Normalize](https://necolas.github.io/normalize.css/), which mak
 #### Variables
 
 The SCSS version of dat-design provides you with [variables](https://github.com/datproject/design/tree/master/scss/variables) for colors and transitions which you should use in your project to ensure visual consistency between dat-related projects. Refer to the [Dat Styleguide](http://datproject.github.io/design/) to understand how.
-
-#### Utility classes
-
-Dat-design includes a toolkit of utility classes ([Basscss](https://github.com/basscss/basscss)). Refer to the [Basscss Documentation](http://www.basscss.com/) on how to use them.
 
 #### Dat classes
 

@@ -2,7 +2,7 @@ const Handlebars = require('handlebars')
 const fs = require('fs')
 const glob = require('glob')
 const path = require('path')
-const datIcons = require('dat-icons')
+const datIcons = require('dat-icons/raw')
 
 const partials = [
   'buttons', 'colors', 'elements', 'forms',

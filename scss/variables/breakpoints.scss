@@ -1,0 +1,15 @@
+$xs:    320px;
+$sm:    480px;
+$md1:   640px;
+$md2:   768px;
+$lg:    1024px;
+$xl:    1280px;
+$xxl:   1440px;
+$xxxl:  110rem; // 1600px
+
+$xsmall: 30rem; // 480px should become $sm
+$small: 40rem; // 640px should become $md1
+
+$medium: 64rem; // 1024px should become lg
+$large: 90rem; // 1440px should become xxl
+$huge: 110rem; // 1600px  should become xxxl

@@ -2,12 +2,12 @@
 
 .btn {
   display: inline-block;
-  padding: .375rem .75rem;
-  border-width: 0;
+  padding: .333rem .75rem;
+  border-width: 1px;
   border-style: solid;
   border-color: currentColor;
-  background-color: $color-neutral-50;
-  color: $color-white;
+  background-color: transparent;
+  color: $color-neutral-70;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
@@ -15,15 +15,73 @@
   vertical-align: middle;
   letter-spacing: .02em;
   &:hover, &:focus {
-    background-color: $color-neutral-60;
-    color: $color-white;
+    color: $color-neutral;
     text-decoration: none;
     cursor: pointer;
     outline: 0;
   }
 }
 
+.btn--white {
+  color: $color-white;
+  &:hover, &:focus {
+    color: $color-neutral-20;
+  }
+}
+
 .btn--green {
+  color: $color-green;
+  &:hover, &:focus {
+    color: $color-green-hover;
+  }
+}
+
+.btn--blue {
+  color: $color-blue;
+  &:hover, &:focus {
+    color: $color-blue-hover;
+  }
+}
+
+.btn--yellow {
+  color: $color-yellow;
+  &:hover, &:focus {
+    color: $color-yellow-hover;
+  }
+}
+
+.btn--red {
+  color: $color-red;
+  &:hover, &:focus {
+    color: $color-red-hover;
+  }
+}
+
+.btn[disabled],
+.btn--disabled {
+  color: $color-neutral-30;
+  cursor: default;
+  &:hover, &:focus {
+    color: $color-neutral-30;
+    cursor: default;
+  }
+}
+
+// full btns
+
+.btn--full {
+  border-width: 0;
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  background-color: $color-neutral-50;
+  color: $color-white;
+  &:hover, &:focus {
+    background-color: $color-neutral-60;
+    color: $color-white;
+  }
+}
+
+.btn--full.btn--green {
   background-color: $color-green;
   &:hover, &:focus {
     color: $color-white;
@@ -31,7 +89,7 @@
   }
 }
 
-.btn--blue {
+.btn--full.btn--blue {
   background-color: $color-blue;
   &:hover, &:focus {
     color: $color-white;
@@ -39,7 +97,7 @@
   }
 }
 
-.btn--yellow {
+.btn--full.btn--yellow {
   background-color: $color-yellow;
   &:hover, &:focus {
     color: $color-white;
@@ -47,7 +105,7 @@
   }
 }
 
-.btn--red {
+.btn--full.btn--red {
   background-color: $color-red;
   &:hover, &:focus {
     color: $color-white;
@@ -55,8 +113,8 @@
   }
 }
 
-.btn[disabled],
-.btn--disabled {
+.btn--full.btn[disabled],
+.btn--full.btn--disabled {
   background-color: $color-neutral-10;
   color: $color-neutral-40;
   cursor: default;
@@ -72,14 +130,9 @@
   padding: .3rem .5rem;
 }
 
-// .btn--default {
-//   font-size: .75rem;
-// }
-
 .btn--large {
   font-size: 1.125rem;
   padding: .5rem .75rem;
-
 }
 
 .btn--cta {
