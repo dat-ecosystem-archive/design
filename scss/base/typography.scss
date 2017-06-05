@@ -75,3 +75,9 @@ body {
     color: $color-neutral-60;
   }
 }
+pre { 
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid black;
+  overflow: auto;
+}
