@@ -4,7 +4,7 @@
   "description": "design assets and docs for dat project",
   "homepage": "http://datproject.github.io/design/",
   "author": "dat project",
-  "license": "ISC",
+  "license": "MIT",
   "main": "index.js",
   "style": "public/css/base.css",
   "scripts": {
