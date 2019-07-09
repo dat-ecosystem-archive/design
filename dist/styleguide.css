@@ -481,6 +481,11 @@ body {
     line-height: 1.25;
     color: #7C8792; }
 
+pre {
+  background-color: #eee;
+  padding: 10px;
+  overflow: auto; }
+
 a {
   color: #007FFF; }
 
@@ -705,8 +710,7 @@ a[disabled],
   padding-right: .5rem;
   padding-left: .5rem;
   border: 1px solid #C3C9CD;
-  color: #7C8792;
-  text-transform: uppercase; }
+  color: #7C8792; }
   .dat-input__input:hover, .dat-input__input:focus, .dat-input__input:active {
     outline: none;
     color: #293648;
