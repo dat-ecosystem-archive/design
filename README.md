@@ -1,7 +1,10 @@
-# dat-design
+[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](https://github.com/hypercore-protocol/hypercore-proposals) 
 
-[![NPM version][npm-image]][npm-url]
-[![Join the chat at https://gitter.im/datproject/design](https://badges.gitter.im/datproject/design.svg)](https://gitter.im/datproject/design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+More info on active projects and modules at [dat-ecosystem.org](https://dat-ecosystem.org/) <img src="https://i.imgur.com/qZWlO1y.jpg" width="30" height="30" /> 
+
+---
+
+# dat-design
 
 design resources and assets for the [dat project](http://dat-data.com)
 
