@@ -24,7 +24,7 @@
     "gh-pages": "^0.11.0",
     "glob": "^7.1.1",
     "handlebars": "^4.0.5",
-    "node-sass": "^3.7.0",
+    "node-sass": "^7.0.0",
     "node-sass-magic-importer": "^1.1.2",
     "nodemon": "^1.9.2",
     "spritesh": "^1.2.0",
